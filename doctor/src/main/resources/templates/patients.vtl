@@ -1,0 +1,11 @@
+#if ($patients)
+  <ul>
+    #foreach($patient in $patients)
+      <li>$patient.getName()</li>
+    #end
+  </ul>
+#else
+  <p>No patients</p>
+#end
+
+<a href="/patients/new">Add new Patient</a>
